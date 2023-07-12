@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vibe_Checker-Sentimental-analysis</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'pages/home/css/home.css' %}">
+</head>
+      <body class="bg-image" 
+      style="background-image: url('https://t3.ftcdn.net/jpg/05/47/48/74/240_F_547487495_Q2FOKNca2Vmq3MRxQ91h6wkIoqcfbGu2.jpg');
+             height: 100vh; background-size: cover;">
+        
+</div>
+        <div class='home'>
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" data-aos="fade-down" data-aos-delay="500">
+          <div class="container">
+            <a class="navbar-brand" href="/">Home</a>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="{% url 'about' %}" class="nav-link" style="font-weight: bold;">Sentiment Analysis</a></li>
+               
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </div>
+    </body>
+    
+</html>
+
+
+
+{% block content%}
+
+{% endblock %}
